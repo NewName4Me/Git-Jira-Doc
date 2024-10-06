@@ -1,0 +1,44 @@
+{
+    "themes": [
+        {
+            "name": "light-orange",
+            "colors": {
+                "primario": "#ffffff",
+                "secundario": "#f17223",
+                "grid": "hsla(0, 1%, 81%, 0.531)"
+            }
+        },
+        {
+            "name": "dark-blue",
+            "colors": {
+                "primario": "#1b263b",
+                "secundario": "#415a77",
+                "grid": "#778da9"
+            }
+        },
+        {
+            "name": "aqua-green",
+            "colors": {
+                "primario": "#a2d5c6",
+                "secundario": "#077b8a",
+                "grid": "#1e656d"
+            }
+        },
+        {
+            "name": "sunset",
+            "colors": {
+                "primario": "#ffad60",
+                "secundario": "#ff6f59",
+                "grid": "#254441"
+            }
+        },
+        {
+            "name": "neon",
+            "colors": {
+                "primario": "#000000",
+                "secundario": "#ff00ff",
+                "grid": "#007acc"
+            }
+        }
+    ]
+}
