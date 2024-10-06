@@ -1,12 +1,28 @@
 (function () {
     // variables globales
     const themesCollection = document.querySelector('#themesCollection');
+    const modalPopUp = document.querySelector('#modalBtn');
+    let modalPopUpVisible = false;
 
     document.addEventListener('DOMContentLoaded', iniciarApp);
 
     // Función para inicializar la aplicación
     function iniciarApp() {
         cargarTemas().then(crearBotonesTemas);
+        modalPopUp.addEventListener('click', toggleThemesCollection);
+    }
+
+    /**
+     * Función para mostrar u ocultar el contenedor de temas
+     */
+    function toggleThemesCollection() {
+        if (!modalPopUpVisible) {
+            themesCollection.style.opacity = '1';
+            modalPopUpVisible = true;
+        } else {
+            themesCollection.style.opacity = '0';
+            modalPopUpVisible = false;
+        }
     }
 
     /**
@@ -41,6 +57,12 @@
         const btnTema = document.createElement('BUTTON');
         btnTema.classList.add('btn');
         btnTema.textContent = name;
+
+        // Aplicar los colores del tema al botón
+        btnTema.style.borderColor = colors.grid;
+        btnTema.style.backgroundColor = colors.primario;
+        btnTema.style.color = colors.secundario;
+
         btnTema.addEventListener('click', () => cambiarTema(colors));
         return btnTema;
     }
