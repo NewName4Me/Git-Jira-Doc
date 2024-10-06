@@ -1,5 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    transition: 0.2s ease all;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primario: #ffffff;
     --secundario: #f17223;
     --grid: hsla(0, 1%, 81%, 0.531);
+}
+
+#modal {
+    position: fixed;
+    right: 5%;
+    padding: 1rem;
+    border-radius: 16px;
+    text-align: center;
+}
+
+#modalBtn {
+    font-family: 'Orelega One';
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#themesCollection {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 0;
+}
+
+#themesCollection button {
+    padding: 1rem;
+    font-family: 'Poppins';
+    border-radius: 16px;
+    font-size: 1rem;
+    cursor: pointer;
 }
