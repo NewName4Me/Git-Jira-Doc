@@ -8,7 +8,10 @@
 
     // Función para inicializar la aplicación
     function iniciarApp() {
-        cargarTemas().then(crearBotonesTemas);
+        cargarTemas().then(temas => {
+            crearBotonesTemas(temas);
+            cargarTemaGuardado(); // Cargar el tema guardado al iniciar
+        });
         modalPopUp.addEventListener('click', toggleThemesCollection);
     }
 
@@ -63,7 +66,10 @@
         btnTema.style.backgroundColor = colors.primario;
         btnTema.style.color = colors.secundario;
 
-        btnTema.addEventListener('click', () => cambiarTema(colors));
+        btnTema.addEventListener('click', () => {
+            cambiarTema(colors);
+            localStorage.setItem('selectedTheme', JSON.stringify(colors)); // Guardar tema en localStorage
+        });
         return btnTema;
     }
 
@@ -78,6 +84,17 @@
         root.style.setProperty('--secundario', secundario);
         root.style.setProperty('--grid', grid);
         console.log(`Tema cambiado a: ${primario}, ${secundario}, ${grid}`);
+    }
+
+    /**
+     * Función que carga el tema guardado en localStorage
+     */
+    function cargarTemaGuardado() {
+        const savedTheme = localStorage.getItem('selectedTheme');
+        if (savedTheme) {
+            const parsedTheme = JSON.parse(savedTheme);
+            cambiarTema(parsedTheme);
+        }
     }
 
 })();
