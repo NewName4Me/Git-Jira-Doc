@@ -1,3 +1,10 @@
+:root {
+    --naranja: #f17223;
+    --gridGrid: hsla(0, 1%, 81%, 0.531);
+    --principal: whitesmoke;
+}
+
+
 header {
     background: white;
     margin: 1rem 2.5rem;
