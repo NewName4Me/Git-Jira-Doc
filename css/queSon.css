@@ -133,3 +133,11 @@ section:nth-of-type(2) article+figure {
 .containerArticle div p {
     max-width: 28ch;
 }
+
+section:nth-of-type(2) p {
+    width: 32ch;
+}
+
+section:nth-of-type(2) article+figure {
+    filter: drop-shadow(10px 10px 10px black);
+}
