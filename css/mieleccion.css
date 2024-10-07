@@ -1,25 +1,93 @@
-#mainEleccion section {
+:root {
+    --naranja: #f17223;
+    --gridGrid: hsla(0, 1%, 81%, 0.531);
+    --principal: whitesmoke;
+}
+
+
+header {
+    background: white;
+    margin: 1rem 2.5rem;
+    padding: 0.8rem;
+    border-radius: 24px;
+    display: grid;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    z-index: 99;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:first-child {
+    margin-right: auto;
+    font-size: 1.2rem;
+}
+
+nav a:first-child span {
+    background: var(--naranja);
+    color: white;
+    border-radius: 12px;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+    padding: 0.4rem;
+    padding-inline: 0.6rem;
+    margin-left: -1rem;
+}
+
+nav a:nth-child(2):hover,
+nav a:nth-child(3):hover,
+nav a:nth-child(4):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--naranja);
+    text-decoration-thickness: 2px;
+}
+
+nav a:last-child {
+    margin-left: auto;
+    background: var(--naranja);
+    border-radius: 16px;
+    color: white;
+}
+
+
+
+section {
     display: grid;
     grid-template-columns: 55% 45%;
     margin-bottom: 5rem;
 }
 
-#mainEleccion h1 {
+ h1 {
     font-size: 4rem;
     margin-bottom: -1rem;
 }
 
-#mainEleccion h2 {
+ h2 {
     font-size: 1rem;
     color: lightslategray;
 }
 
-#mainEleccion details {
+ details {
     font-size: small;
     color: black;
 }
 
-#mainEleccion h3 {
+ h3 {
     text-align: left;
     margin-bottom: -1rem;
     font-size: xx-large;
@@ -27,12 +95,12 @@
     margin-left: 5rem;
 }
 
-#mainEleccion section article:first-of-type {
+ section article:first-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-#mainEleccion section article:first-of-type>div {
+ section article:first-of-type>div {
     text-align: left;
     margin-left: 3rem;
     margin-top: 2rem;
@@ -42,22 +110,22 @@
     padding: 1rem;
 }
 
-#mainEleccion section article:first-of-type>div:hover {
+ section article:first-of-type>div:hover {
     box-shadow: 2px 2px 50px var(--naranja);
     transition: 0.2s ease all;
     cursor: pointer;
 }
 
-#mainEleccion section article:first-of-type>div .titulin {
+ section article:first-of-type>div .titulin {
     margin-bottom: -1rem;
 }
 
-#mainEleccion .titulin {
+ .titulin {
     display: flex;
     align-items: center;
 }
 
-#mainEleccion section article:last-of-type {
+ section article:last-of-type {
     min-width: 20vw;
     min-height: 100vh;
     display: grid;
@@ -66,7 +134,7 @@
 
 }
 
-#mainEleccion section article:last-of-type>div {
+ section article:last-of-type>div {
     background: lightgreen;
     min-width: 30vw;
     border-radius: 400px 400px 0 0;
@@ -75,17 +143,17 @@
     box-shadow: 0px 10px 10px lightgreen;
 }
 
-#mainEleccion section article:last-of-type>div figure {
+ section article:last-of-type>div figure {
     margin-top: 5rem;
 }
 
-#mainEleccion h4 {
+ h4 {
     font-size: medium;
     font-family: 'Poppins';
     margin-left: 0.5rem;
 }
 
-#mainEleccion h5 {
+ h5 {
     text-align: left;
     font-size: medium;
     font-weight: normal;
