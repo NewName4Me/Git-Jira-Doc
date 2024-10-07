@@ -22,3 +22,27 @@ section:first-of-type article:hover {
     cursor: default;
 }
 
+section:first-of-type article div {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1rem;
+}
+
+section:first-of-type article div figure {
+    flex-basis: 20%;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+section:first-of-type article div figure svg {
+    border-radius: 6px;
+    padding: 0.2rem;
+}
+
+section:first-of-type article:nth-of-type(1) div figure svg {
+    background: lightcoral;
+}
+
+section:first-of-type article:nth-of-type(2) div figure svg {
+    background: lightgreen;
+}
