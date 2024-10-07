@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orelega+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --naranja: #f17223;
+    --gridGrid: hsla(0, 1%, 81%, 0.531);
+    --principal: whitesmoke;
+}
+
+.orelega-one-regular {
+    font-family: "Orelega One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--principal);
+    box-sizing: border-box;
+    background-size: 50px 50px;
+    background-image:
+        linear-gradient(to right, var(--gridGrid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--gridGrid) 1px, transparent 1px);
+    transition: all 0.3s ease;
+}
+
+body:has(main[id="main"]) {
+    overflow-y: hidden;
+}
+
+body:has(main[id="mainQueSon"]) {
+    overflow-y: scroll;
+}
+
+header {
+    background: white;
+    margin: 1rem 2.5rem;
+    padding: 0.8rem;
+    border-radius: 24px;
+    display: grid;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    z-index: 99;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a:first-child {
+    margin-right: auto;
+    font-size: 1.3rem;
+}
+
+nav a:first-child span {
+    background: var(--naranja);
+    color: white;
+    border-radius: 12px;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+    padding: 0.4rem;
+    padding-inline: 0.6rem;
+    margin-left: -1rem;
+}
+
+nav a:nth-child(2):hover,
+nav a:nth-child(3):hover,
+nav a:nth-child(4):hover {
+    text-decoration: underline;
+    text-decoration-color: var(--naranja);
+    text-decoration-thickness: 2px;
+}
+
+nav a:last-child {
+    margin-left: auto;
+    background: var(--naranja);
+    border-radius: 16px;
+    color: white;
+}
+
+main {
+    margin-top: 2.2rem;
+    text-align: center;
+}
+
+.temaPrincipal {
+    display: none;
+}
+
+
+/* Segunda parte del CSS */
+
+#mainPrincipal h1 {
+    margin: 0 auto;
+    font-family: 'Orelega One', serif;
+    width: 26ch;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#mainPrincipal h1+p {
+    color: rgb(47, 46, 46);
+    font-size: large;
+    width: 56ch;
+    margin: 0rem auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#mainPrincipal .comenzar {
+    background: var(--naranja);
+    border-radius: 32px;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    font-size: small;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+}
+
+#mainPrincipal .comenzar>span {
+    background: white;
+    color: var(--naranja);
+    border-radius: 50%;
+    padding-inline: 0.4rem;
+    margin-left: 0.8rem;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#mainPrincipal section {
+    position: relative;
+}
+
+#mainPrincipal section figure .mockUpPhone {
+    width: 20%;
+    height: auto;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 100%);
+}
+
+#mainPrincipal .numOfUsers {
+    position: absolute;
+    left: 30%;
+    top: 12%;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    padding-left: 0.4rem;
+    padding-right: 0rem;
+    border-radius: 16px;
+    box-shadow: 2px 2px 5px 0px lightslategray;
+}
+
+#mainPrincipal .numOfUsers div {
+    margin-right: -1.5rem;
+    margin-left: 1rem;
+}
+
+#mainPrincipal .numOfUsers h3 {
+    color: var(--naranja);
+    font-weight: bolder;
+}
+
+#mainPrincipal .numOfUsers p {
+    font-size: x-small;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    color: rgb(47, 46, 46);
+}
+
+#mainPrincipal .numOfUsers img {
+    width: 32px;
+    border-radius: 50%;
+    height: 30px;
+    margin-right: -0.8rem;
+    border: 2.5px solid white;
+}
+
+#mainPrincipal .chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 15%;
+    height: 70px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+    padding-top: 3rem;
+    left: 62%;
+    box-shadow: 2px 2px 5px 0px lightslategray;
+
+}
+
+#mainPrincipal .chart section {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: -2%;
+    left: 0%;
+}
+
+#mainPrincipal .chart section p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(47, 46, 46);
+    font-size: small;
+    margin-top: 1.2rem;
+}
+
+#mainPrincipal .chart section button {
+    cursor: pointer;
+    height: 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 16px;
+}
+
+#mainPrincipal .bar-container {
+    position: relative;
+    width: 8%;
+    height: 100%;
+    margin: 0 5px;
+    background-color: #fbd7d1;
+    /* Color del espacio por encima de la barra */
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#mainPrincipal .bar {
+    cursor: pointer;
+    width: 100%;
+    background-color: #f23226;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s ease;
+}
+
+#mainPrincipal .bar:hover {
+    background-color: red;
+    scale: 1.1;
+}
+
+#mainPrincipal .informacionBasica {
+    margin-top: 10rem;
+}
+
+#mainPrincipal .informacionBasica>div:first-of-type {
+    display: flex;
+    justify-content: center;
+}
+
+#mainPrincipal .informacionBasica article {
+    border: 2px solid black;
+    display: flex;
+
+}
