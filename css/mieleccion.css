@@ -1,0 +1,94 @@
+#mainEleccion section {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    margin-bottom: 5rem;
+}
+
+#mainEleccion h1 {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+}
+
+#mainEleccion h2 {
+    font-size: 1rem;
+    color: lightslategray;
+}
+
+#mainEleccion details {
+    font-size: small;
+    color: black;
+}
+
+#mainEleccion h3 {
+    text-align: left;
+    margin-bottom: -1rem;
+    font-size: xx-large;
+    font-family: 'Capi';
+    margin-left: 5rem;
+}
+
+#mainEleccion section article:first-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#mainEleccion section article:first-of-type>div {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    background: whitesmoke;
+    box-shadow: 2px 2px 20px hsla(209, 11%, 37%, 0.441);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+#mainEleccion section article:first-of-type>div:hover {
+    box-shadow: 2px 2px 50px var(--naranja);
+    transition: 0.2s ease all;
+    cursor: pointer;
+}
+
+#mainEleccion section article:first-of-type>div .titulin {
+    margin-bottom: -1rem;
+}
+
+#mainEleccion .titulin {
+    display: flex;
+    align-items: center;
+}
+
+#mainEleccion section article:last-of-type {
+    min-width: 20vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    margin-top: -25rem;
+
+}
+
+#mainEleccion section article:last-of-type>div {
+    background: lightgreen;
+    min-width: 30vw;
+    border-radius: 400px 400px 0 0;
+    min-height: 100vh;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+    box-shadow: 0px 10px 10px lightgreen;
+}
+
+#mainEleccion section article:last-of-type>div figure {
+    margin-top: 5rem;
+}
+
+#mainEleccion h4 {
+    font-size: medium;
+    font-family: 'Poppins';
+    margin-left: 0.5rem;
+}
+
+#mainEleccion h5 {
+    text-align: left;
+    font-size: medium;
+    font-weight: normal;
+    font-family: 'Fraunces';
+    color: rgb(74, 72, 72);
+}
