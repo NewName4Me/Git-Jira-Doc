@@ -1,4 +1,24 @@
-h1{
-    color: var(--secundario);
-    font-family: "Open Sans";
+h1 {
+    margin-bottom: 2rem;
 }
+
+section:first-of-type {
+    display: flex;
+    margin-inline: 1vw;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+section:first-of-type article {
+    border-radius: 16px;
+    padding: 1rem;
+    background: white;
+    border: 2px solid white;
+    box-shadow: 5px 5px 10px hsla(210, 14%, 53%, 0.254);
+}
+
+section:first-of-type article:hover {
+    border: 2px solid var(--naranja);
+    cursor: default;
+}
+
