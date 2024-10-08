@@ -1,18 +1,19 @@
 (function () {
     // variables globales
     const themesCollection = document.querySelector('#themesCollection');
-    const modalPopUp = document.querySelector('#modalBtn');
+    const modalPopUp = document.querySelector('nav a:last-child');
     let modalPopUpVisible = false;
 
     document.addEventListener('DOMContentLoaded', iniciarApp);
 
     // Función para inicializar la aplicación
     function iniciarApp() {
-        cargarTemas().then(temas => {
-            crearBotonesTemas(temas);
-            cargarTemaGuardado(); // Cargar el tema guardado al iniciar
+        crearBotonesTemas(temasJson.themes);
+        cargarTemaGuardado(); // Cargar el tema guardado al iniciar
+        modalPopUp.addEventListener('click', e => {
+            e.preventDefault();
+            toggleThemesCollection();
         });
-        modalPopUp.addEventListener('click', toggleThemesCollection);
     }
 
     /**
@@ -29,23 +30,12 @@
     }
 
     /**
-     * Función que carga el JSON con los temas
-     * @returns {Promise} Retorna la promesa con los temas procesados
-     */
-    async function cargarTemas() {
-        const URL = '../db/temas.json';
-        const response = await fetch(URL);
-        const themesJson = await response.json();
-        return themesJson.themes;
-    }
-
-    /**
      * Función que crea botones para cada tema
-     * @param {Array} temas Lista de temas obtenidos del JSON
+     * @param {Array} temas Lista de temas obtenidos del objeto temasJson
      */
     function crearBotonesTemas(temas) {
-        temas.forEach(({ name, colors }) => {
-            const btnTema = crearBotonTema(name, colors);
+        temas.forEach(tema => {
+            const btnTema = crearBotonTema(tema.name, tema.colors);
             themesCollection.appendChild(btnTema);
         });
     }
@@ -97,4 +87,52 @@
         }
     }
 
+    const temasJson = {
+        "themes": [
+            {
+                "name": "light-orange",
+                "colors": {
+                    "primario": "#ffffff",
+                    "secundario": "#f17223",
+                    "grid": "hsla(0, 1%, 81%, 0.531)"
+                }
+            },
+            {
+                "name": "aqua-green",
+                "colors": {
+                    "primario": "#a2d5c6",
+                    "secundario": "#077b8a",
+                    "grid": "#1e656d"
+                }
+            },
+            {
+                "name": "bright-pink",
+                "colors": {
+                    "primario": "#ffc0cb",
+                    "secundario": "#ff69b4",
+                    "grid": "#ffb6c1"
+                }
+            },
+            {
+                "name": "neon",
+                "colors": {
+                    "primario": "#000000",
+                    "secundario": "#ff00ff",
+                    "grid": "#007acc"
+                }
+
+            },
+            {
+                "name": "bright-blue",
+                "colors": {
+                    "primario": "#87ceeb",
+                    "secundario": "#6495ed",
+                    "grid": "#4682b4"
+                }
+            }
+        ]
+    }
+
+
 })();
+

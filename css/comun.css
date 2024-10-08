@@ -20,16 +20,19 @@ body {
 
 #modal {
     position: fixed;
-    right: 5%;
+    right: 3%;
     padding: 1rem;
     border-radius: 16px;
     text-align: center;
+    z-index: 10;
 }
 
 #modalBtn {
     font-family: 'Orelega One';
     font-weight: 100;
     font-size: 1.5rem;
+    z-index: 10;
+
 }
 
 #themesCollection {
@@ -38,6 +41,8 @@ body {
     flex-direction: column;
     gap: 1rem;
     opacity: 0;
+    z-index: 10;
+
 }
 
 #themesCollection button {
@@ -46,4 +51,7 @@ body {
     border-radius: 16px;
     font-size: 1rem;
     cursor: pointer;
+    z-index: 10;
+    min-width: fit-content;
+
 }

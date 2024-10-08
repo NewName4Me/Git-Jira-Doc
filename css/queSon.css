@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orelega+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
-    --naranja: #f17223;
-    --gridGrid: hsla(0, 1%, 81%, 0.531);
-    --principal: whitesmoke;
+    --primario: #ffffff;
+    --secundario: #f17223;
+    --grid: hsla(0, 1%, 81%, 0.531);
 }
 
 .orelega-one-regular {
@@ -17,12 +13,12 @@
 body {
     padding: 0;
     margin: 0;
-    background: var(--principal);
+    background: var(--primario);
     box-sizing: border-box;
     background-size: 50px 50px;
     background-image:
-        linear-gradient(to right, var(--gridGrid) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--gridGrid) 1px, transparent 1px);
+        linear-gradient(to right, var(--grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
     transition: all 0.3s ease;
 }
 
@@ -35,7 +31,7 @@ body:has(main[id="mainQueSon"]) {
 }
 
 header {
-    background: white;
+    background: var(--primario);
     margin: 1rem 2.5rem;
     padding: 0.8rem;
     border-radius: 24px;
@@ -68,8 +64,8 @@ nav a:first-child {
 }
 
 nav a:first-child span {
-    background: var(--naranja);
-    color: white;
+    background: var(--secundario);
+    color: var(--primario);
     border-radius: 12px;
     height: 1.5rem;
     margin-right: 0.3rem;
@@ -82,15 +78,15 @@ nav a:nth-child(2):hover,
 nav a:nth-child(3):hover,
 nav a:nth-child(4):hover {
     text-decoration: underline;
-    text-decoration-color: var(--naranja);
+    text-decoration-color: var(--secundario);
     text-decoration-thickness: 2px;
 }
 
 nav a:last-child {
     margin-left: auto;
-    background: var(--naranja);
+    background: var(--secundario);
     border-radius: 16px;
-    color: white;
+    color: var(--primario);
 }
 
 main {
@@ -99,11 +95,19 @@ main {
 }
 
 .temaPrincipal {
-    display: none;
+    display: none;
 }
 
 h1 {
-    margin-bottom: 2rem;
+    margin: 1rem auto;
+    font-family: 'Orelega One';
+    font-size: 3rem;
+    text-align: center;
+}
+
+img {
+    margin-left: 10rem;
+    width: 50%;
 }
 
 section:first-of-type {
@@ -116,13 +120,13 @@ section:first-of-type {
 section:first-of-type article {
     border-radius: 16px;
     padding: 1rem;
-    background: white;
-    border: 2px solid white;
+    background: var(--primario);
+    border: 2px solid var(--primario);
     box-shadow: 5px 5px 10px hsla(210, 14%, 53%, 0.254);
 }
 
 section:first-of-type article:hover {
-    border: 2px solid var(--naranja);
+    border: 2px solid var(--secundario);
     cursor: default;
 }
 
@@ -203,6 +207,7 @@ section:nth-of-type(2) article+figure {
 .containerArticle {
     display: flex;
 }
+
 .containerArticle {
     display: flex;
     gap: 1rem;
@@ -250,7 +255,7 @@ section:nth-of-type(2) article+figure {
     position: absolute;
     height: 150px;
     width: 300px;
-    background: white;
+    background: var(--primario);
     border-radius: 50%;
     box-shadow: 1px 12px 33px rgba(0, 0, 0, 0.288);
     bottom: 20%;
@@ -260,11 +265,11 @@ section:nth-of-type(2) article+figure {
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: black;
+    color: var(--secundario);
 }
 
 .bocadillo-redondo:before {
-    border: 25px solid white;
+    border: 25px solid var(--primario);
     content: '';
     border-left-color: transparent;
     border-bottom-color: transparent;

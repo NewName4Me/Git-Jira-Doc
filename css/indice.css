@@ -1,13 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orelega+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-:root {
-    --naranja: #f17223;
-    --gridGrid: hsla(0, 1%, 81%, 0.531);
-    --principal: whitesmoke;
-}
-
 .orelega-one-regular {
     font-family: "Orelega One", serif;
     font-weight: 400;
@@ -17,12 +7,12 @@
 body {
     padding: 0;
     margin: 0;
-    background: var(--principal);
+    background: var(--primario);
     box-sizing: border-box;
     background-size: 50px 50px;
     background-image:
-        linear-gradient(to right, var(--gridGrid) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--gridGrid) 1px, transparent 1px);
+        linear-gradient(to right, var(--grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
     transition: all 0.3s ease;
 }
 
@@ -35,7 +25,7 @@ body:has(main[id="mainQueSon"]) {
 }
 
 header {
-    background: white;
+    background: var(--primario);
     margin: 1rem 2.5rem;
     padding: 0.8rem;
     border-radius: 24px;
@@ -68,7 +58,7 @@ nav a:first-child {
 }
 
 nav a:first-child span {
-    background: var(--naranja);
+    background: var(--secundario);
     color: white;
     border-radius: 12px;
     height: 1.5rem;
@@ -82,13 +72,13 @@ nav a:nth-child(2):hover,
 nav a:nth-child(3):hover,
 nav a:nth-child(4):hover {
     text-decoration: underline;
-    text-decoration-color: var(--naranja);
+    text-decoration-color: var(--secundario);
     text-decoration-thickness: 2px;
 }
 
 nav a:last-child {
     margin-left: auto;
-    background: var(--naranja);
+    background: var(--secundario);
     border-radius: 16px;
     color: white;
 }
@@ -102,7 +92,6 @@ main {
     display: none;
 }
 
-
 /* Segunda parte del CSS */
 
 #mainPrincipal h1 {
@@ -114,7 +103,7 @@ main {
 }
 
 #mainPrincipal h1+p {
-    color: rgb(47, 46, 46);
+    color: black;
     font-size: large;
     width: 56ch;
     margin: 0rem auto;
@@ -124,7 +113,7 @@ main {
 }
 
 #mainPrincipal .comenzar {
-    background: var(--naranja);
+    background: var(--secundario);
     border-radius: 32px;
     color: white;
     padding: 0.5rem;
@@ -139,7 +128,7 @@ main {
 
 #mainPrincipal .comenzar>span {
     background: white;
-    color: var(--naranja);
+    color: var(--secundario);
     border-radius: 50%;
     padding-inline: 0.4rem;
     margin-left: 0.8rem;
@@ -182,7 +171,7 @@ main {
 }
 
 #mainPrincipal .numOfUsers h3 {
-    color: var(--naranja);
+    color: var(--secundario);
     font-weight: bolder;
 }
 
@@ -190,7 +179,7 @@ main {
     font-size: x-small;
     margin-top: -1rem;
     margin-bottom: 1rem;
-    color: rgb(47, 46, 46);
+    color: black;
 }
 
 #mainPrincipal .numOfUsers img {
@@ -207,7 +196,7 @@ main {
     justify-content: space-between;
     width: 15%;
     height: 70px;
-    background-color: #fff;
+    background-color: white;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -216,7 +205,6 @@ main {
     padding-top: 3rem;
     left: 62%;
     box-shadow: 2px 2px 5px 0px lightslategray;
-
 }
 
 #mainPrincipal .chart section {
@@ -230,7 +218,7 @@ main {
 
 #mainPrincipal .chart section p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(47, 46, 46);
+    color: black;
     font-size: small;
     margin-top: 1.2rem;
 }
@@ -249,7 +237,6 @@ main {
     height: 100%;
     margin: 0 5px;
     background-color: #fbd7d1;
-    /* Color del espacio por encima de la barra */
     border-radius: 5px;
     overflow: hidden;
 }
@@ -281,5 +268,4 @@ main {
 #mainPrincipal .informacionBasica article {
     border: 2px solid black;
     display: flex;
-
 }
