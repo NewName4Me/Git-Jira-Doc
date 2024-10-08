@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orelega+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
-    --naranja: #f17223;
-    --gridGrid: hsla(0, 1%, 81%, 0.531);
-    --principal: whitesmoke;
+    --primario: #ffffff;
+    --secundario: #f17223;
+    --grid: hsla(0, 1%, 81%, 0.531);
 }
 
 .orelega-one-regular {
@@ -17,12 +13,12 @@
 body {
     padding: 0;
     margin: 0;
-    background: var(--principal);
+    background: var(--primario);
     box-sizing: border-box;
     background-size: 50px 50px;
     background-image:
-        linear-gradient(to right, var(--gridGrid) 1px, transparent 1px),
-        linear-gradient(to bottom, var(--gridGrid) 1px, transparent 1px);
+        linear-gradient(to right, var(--grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
     transition: all 0.3s ease;
 }
 
@@ -68,7 +64,7 @@ nav a:first-child {
 }
 
 nav a:first-child span {
-    background: var(--naranja);
+    background: var(--secundario);
     color: white;
     border-radius: 12px;
     height: 1.5rem;
@@ -82,13 +78,13 @@ nav a:nth-child(2):hover,
 nav a:nth-child(3):hover,
 nav a:nth-child(4):hover {
     text-decoration: underline;
-    text-decoration-color: var(--naranja);
+    text-decoration-color: var(--secundario);
     text-decoration-thickness: 2px;
 }
 
 nav a:last-child {
     margin-left: auto;
-    background: var(--naranja);
+    background: var(--secundario);
     border-radius: 16px;
     color: white;
 }
@@ -104,29 +100,28 @@ main {
 
 
 
-
 section {
     display: grid;
     grid-template-columns: 55% 45%;
     margin-bottom: 5rem;
 }
 
- h1 {
+h1 {
     font-size: 4rem;
     margin-bottom: -1rem;
 }
 
- h2 {
+h2 {
     font-size: 1rem;
     color: lightslategray;
 }
 
- details {
+details {
     font-size: small;
     color: black;
 }
 
- h3 {
+h3 {
     text-align: left;
     margin-bottom: -1rem;
     font-size: xx-large;
@@ -134,12 +129,12 @@ section {
     margin-left: 5rem;
 }
 
- section article:first-of-type {
+section article:first-of-type {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
- section article:first-of-type>div {
+section article:first-of-type>div {
     text-align: left;
     margin-left: 3rem;
     margin-top: 2rem;
@@ -149,22 +144,22 @@ section {
     padding: 1rem;
 }
 
- section article:first-of-type>div:hover {
-    box-shadow: 2px 2px 50px var(--naranja);
+section article:first-of-type>div:hover {
+    box-shadow: 2px 2px 50px var(--secundario);
     transition: 0.2s ease all;
     cursor: pointer;
 }
 
- section article:first-of-type>div .titulin {
+section article:first-of-type>div .titulin {
     margin-bottom: -1rem;
 }
 
- .titulin {
+.titulin {
     display: flex;
     align-items: center;
 }
 
- section article:last-of-type {
+section article:last-of-type {
     min-width: 20vw;
     min-height: 100vh;
     display: grid;
@@ -173,7 +168,7 @@ section {
 
 }
 
- section article:last-of-type>div {
+section article:last-of-type>div {
     background: lightgreen;
     min-width: 30vw;
     border-radius: 400px 400px 0 0;
@@ -182,17 +177,17 @@ section {
     box-shadow: 0px 10px 10px lightgreen;
 }
 
- section article:last-of-type>div figure {
+section article:last-of-type>div figure {
     margin-top: 5rem;
 }
 
- h4 {
+h4 {
     font-size: medium;
     font-family: 'Poppins';
     margin-left: 0.5rem;
 }
 
- h5 {
+h5 {
     text-align: left;
     font-size: medium;
     font-weight: normal;

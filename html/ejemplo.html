@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplos de planificadores de tareas</title>
+    <title>Document</title>
     <link rel="stylesheet" href="../css/ejemplo.css">
     <link rel="stylesheet" href="../css/comun.css">
 </head>
@@ -12,197 +12,172 @@
 <body>
     <header>
         <nav>
-            <a href="#" name="hero"><span>D</span>Despliegue</a>
-            <a href="#" name="queSon">Qué son</a>
+            <a href="../index.html" name="hero"><span>D</span>Despliegue</a>
+            <a href="./queSon.html" name="queSon">Qué son</a>
             <a href="#" name="ejemplos">Ejemplos</a>
-            <a href="#" name="eleccion">Mi elección</a>
-            <a href="#" name="theme" class="changeTheme">Escoger Tema</a>
+            <a href="./mieleccion.html" name="eleccion">Mi elección</a>
+            <a href="" name="theme" class="changeTheme">Escoger Tema</a>
         </nav>
     </header>
-    <h1>Ejemplos de planificadores de tareas</h1>
-    <div class="slider">
-        <div class="slider-container">
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-header">
-                        <img src="../img/ejemplos/jiraIcon.jpg" alt="Imagen pequeña" class="card-img">
-                        <div class="card-title">
-                            <h2>Jira</h2>
-                            <h4>El empresarial</h4>
-                        </div>
+    <section id="modal">
+        <div id="themesCollection">
+        </div>
+    </section>
+    <section>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <img src="../img/ejemplos/jiraIcon.jpg" alt="Imagen pequeña" class="card-img">
+                    <div class="card-title">
+                        <h2>Jira</h2>
+                        <h4>El empresarial</h4>
                     </div>
-                    <hr>
-                    <ul class="card-list">
-                        <li><strong>Ventajas:</strong></li>
-                        <li>Flexible y personalizable</li>
-                        <li>Amplias opciones de integración</li>
-                        <li>Ideal para equipos grandes y proyectos complejos</li>
-                        <li> Personalización </li>
-                        <li>Seguimiento de proyectos</li>
-                        <li>Integraciones</li>
-                        <li>Colaboración</li>
-                        <li>Informes y análisis</li>
-                        <li><strong>Inconvenientes:</strong></li>
-                        <li>Curva de aprendizaje más pronunciada</li>
-                        <li>Puede ser más costoso para equipos pequeños</li>
-                        <li>Sobrecarga de funciones</li>
-                        <li>Dependencia de plugins</li>
-                    </ul>
-                    <button class="card-btn" onclick="window.open('https://confluence.atlassian.com/jira','_blank')">Ver doc</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-header">
-                        <img src="../img/ejemplos/trelloIcon.png" alt="Imagen pequeña" class="card-img">
-                        <div class="card-title">
-                            <h2>Trello</h2>
-                            <h4>El bajo presupuesto/Sin presupuesto</h4>
-                        </div>
-                    </div>
-                    <hr>
-                    <ul class="card-list">
-                        <li><strong>Ventajas:</strong></li>
-                        <li>Fácil de usar e intuitivo</li>
-                        <li>Ideal para equipos pequeños y proyectos simples</li>
-                        <li>Visualización gráfica de tareas</li>
-                        <li>Flexibilidad y personalización</li>
-                        <li>Fácil colaboración en equipo</li>
-                        <li>Integración con otras herramientas</li>
-                        <li>Disponibilidad</li>
-                        <li><strong>Inconvenientes:</strong></li>
-                        <li>Limitaciones en la personalización</li>
-                        <li>Puede ser menos eficiente para proyectos grandes y complejos</li>
-                        <li>Funciones limitadas en la versión gratuita</li>
-                        <li>Dependencia de internet</li>
-                    </ul>
-                    <button class="card-btn" onclick="window.open('https://trello.com/guide', '_blank')">Ver doc</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-header">
-                        <img src="../img/ejemplos/asanaIcon.jpg" alt="Imagen pequeña" class="card-img">
-                        <div class="card-title">
-                            <h2>Asana</h2>
-                            <h4>El olvidado</h4>
-                        </div>
-                    </div>
-                    <hr>
-                    <ul class="card-list">
-                        <li><strong>Ventajas:</strong></li>
-                        <li>Buena combinación de flexibilidad y facilidad de uso</li>
-                        <li>Amplias funciones de colaboración</li>
-                        <li>Escalable para equipos de cualquier tamaño</li>
-                        <li>Interfaz de fácil uso</li>
-                        <li>Gestión flexible de tareas</li>
-                        <li>Colaboración en tiempo real</li>
-                        <li>Notificaciones y actualizaciones</li>
-                        <li>Integración con herramientas</li>
-                        <li>Asignación y priorización de tareas y IA</li>
-                        <li><strong>Inconvenientes:</strong></li>
-                        <li>Puede resultar complejo para usuarios nuevos</li>
-                        <li>La versión gratuita tiene limitaciones</li>
-                    </ul>
-                    <button class="card-btn" onclick="window.open('https://developers.asana.com/', '_blank')">Ver doc</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-header">
-                        <img src="../img/ejemplos/clickUpIcon.jpg" alt="Imagen pequeña" class="card-img">
-                        <div class="card-title">
-                            <h2>ClickUp</h2>
-                            <h4>El aspirante</h4>
-                        </div>
-                    </div>
-                    <hr>
-                    <ul class="card-list">
-                        <li><strong>Ventajas:</strong></li>
-                        <li>Muy versátil con múltiples opciones de visualización</li>
-                        <li>Incluye funciones avanzadas como gestión de proyectos, tareas y recursos</li>
-                        <li>Planificación visual de tareas</li>
-                        <li>Plataforma todo-en-uno</li>
-                        <li>Altamente personalizable</li>
-                        <li>Integraciones con otras herramientas</li>
-                        <li><strong>Inconvenientes:</strong></li>
-                        <li>Curva de aprendizaje más pronunciada</li>
-                        <li>Puede ser más costoso para equipos pequeños</li>
-                        <li>Curva de aprendizaje alta</li>
-                        <li>Interfaz sobrecargada</li>
-                        <li>Rendimiento lento</li>
-                        <li>Automatizaciones limitadas en la versión gratuita</li>
-                        <li>Configuración compleja de dependencias</li>
-                    </ul>
-                    <button class="card-btn" onclick="window.open('https://help.clickup.com/hc/en-us/sections/5414415869463-Docs', '_blank')">Ver doc</button>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content">
-                    <div class="card-header">
-                        <img src="../img/ejemplos/mondayIcon.png" alt="Imagen pequeña" class="card-img">
-                        <div class="card-title">
-                            <h2>Monday</h2>
-                            <h4>El holístico</h4>
-                        </div>
-                    </div>
-                    <hr>
-                    <ul class="card-list">
-                        <li><strong>Ventajas:</strong></li>
-                        <li>Diseño intuitivo y atractivo</li>
-                        <li>Amplias funciones de colaboración en tiempo real</li>
-                        <li>Integraciones con otras aplicaciones populares</li>
-                        <li>Personalización de flujos de trabajo</li>
-                        <li>Vistas múltiples</li>
-                        <li>Colaboración en equipo</li>
-                        <li>Automatizaciones</li>
-                        <li><strong>Inconvenientes:</strong></li>
-                        <li>Puede ser más costoso para equipos grandes</li>
-                        <li>Limitaciones en la personalización avanzada</li>
-                        <li>Funciones avanzadas en planes premium</li>
-                        <li>Curva de aprendizaje con automatizaciones</li>
-                        <li>Rendimiento lento con proyectos grandes</li>
-                        <li>Falta de funcionalidad o ine</li>
-                    </ul>
-                    <button class="card-btn" onclick="window.open('https://developer.monday.com/api-reference/reference/docs', '_blank')">Ver doc</button>
-                </div>
+                <hr>
+                <ul class="card-list">
+                    <li><strong>Ventajas:</strong></li>
+                    <li>Flexible y personalizable</li>
+                    <li>Amplias opciones de integración</li>
+                    <li>Ideal para equipos grandes y proyectos complejos</li>
+                    <li> Personalización </li>
+                    <li>Seguimiento de proyectos</li>
+                    <li>Integraciones</li>
+                    <li>Colaboración</li>
+                    <li>Informes y análisis</li>
+                    <li><strong>Inconvenientes:</strong></li>
+                    <li>Curva de aprendizaje más pronunciada</li>
+                    <li>Puede ser más costoso para equipos pequeños</li>
+                    <li>Sobrecarga de funciones</li>
+                    <li>Dependencia de plugins</li>
+                </ul>
+                <button class="card-btn" onclick="window.open('https://confluence.atlassian.com/jira','_blank')">Ver
+                    doc</button>
             </div>
         </div>
-    </div>
-
-    <script>
-        const cards = document.querySelectorAll('.card');
-        let inicial = 0;
-        const lengthcard = cards.length; // Número total de tarjetas
-
-        // Función para mostrar la tarjeta actual y ocultar las demás
-        function showOrHide() {
-            cards.forEach((card, index) => {
-                card.style.display = index === inicial ? 'block' : 'none';
-            });
-        }
-
-        // Función para manejar el evento de scroll
-        function handleScroll(event) {
-            const delta = Math.sign(event.deltaY); // Determina si el scroll es hacia abajo (1) o hacia arriba (-1)
-
-            // Aumentar o disminuir el valor de 'inicial' dependiendo del scroll
-            inicial += delta;
-
-            // Limitar el valor de 'inicial' entre 0 y lengthcard - 1
-            if (inicial < 0) inicial = 0;
-            if (inicial >= lengthcard) inicial = lengthcard - 1;
-
-            // Actualizar la vista
-            showOrHide();
-        }
-
-        // Agregar el listener para el evento de scroll
-        window.addEventListener('wheel', handleScroll);
-
-        // Mostrar la tarjeta inicial al cargar la página
-        showOrHide();
-    </script>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <img src="../img/ejemplos/trelloIcon.png" alt="Imagen pequeña" class="card-img">
+                    <div class="card-title">
+                        <h2>Trello</h2>
+                        <h4>El bajo presupuesto/Sin presupuesto</h4>
+                    </div>
+                </div>
+                <hr>
+                <ul class="card-list">
+                    <li><strong>Ventajas:</strong></li>
+                    <li>Fácil de usar e intuitivo</li>
+                    <li>Ideal para equipos pequeños y proyectos simples</li>
+                    <li>Visualización gráfica de tareas</li>
+                    <li>Flexibilidad y personalización</li>
+                    <li>Fácil colaboración en equipo</li>
+                    <li>Integración con otras herramientas</li>
+                    <li>Disponibilidad</li>
+                    <li><strong>Inconvenientes:</strong></li>
+                    <li>Limitaciones en la personalización</li>
+                    <li>Puede ser menos eficiente para proyectos grandes y complejos</li>
+                    <li>Funciones limitadas en la versión gratuita</li>
+                    <li>Dependencia de internet</li>
+                </ul>
+                <button class="card-btn" onclick="window.open('https://trello.com/guide', '_blank')">Ver doc</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <img src="../img/ejemplos/asanaIcon.jpg" alt="Imagen pequeña" class="card-img">
+                    <div class="card-title">
+                        <h2>Asana</h2>
+                        <h4>El olvidado</h4>
+                    </div>
+                </div>
+                <hr>
+                <ul class="card-list">
+                    <li><strong>Ventajas:</strong></li>
+                    <li>Buena combinación de flexibilidad y facilidad de uso</li>
+                    <li>Amplias funciones de colaboración</li>
+                    <li>Escalable para equipos de cualquier tamaño</li>
+                    <li>Interfaz de fácil uso</li>
+                    <li>Gestión flexible de tareas</li>
+                    <li>Colaboración en tiempo real</li>
+                    <li>Notificaciones y actualizaciones</li>
+                    <li>Integración con herramientas</li>
+                    <li>Asignación y priorización de tareas y IA</li>
+                    <li><strong>Inconvenientes:</strong></li>
+                    <li>Puede resultar complejo para usuarios nuevos</li>
+                    <li>La versión gratuita tiene limitaciones</li>
+                </ul>
+                <button class="card-btn" onclick="window.open('https://developers.asana.com/', '_blank')">Ver
+                    doc</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <img src="../img/ejemplos/clickUpIcon.jpg" alt="Imagen pequeña" class="card-img">
+                    <div class="card-title">
+                        <h2>ClickUp</h2>
+                        <h4>El aspirante</h4>
+                    </div>
+                </div>
+                <hr>
+                <ul class="card-list">
+                    <li><strong>Ventajas:</strong></li>
+                    <li>Muy versátil con múltiples opciones de visualización</li>
+                    <li>Incluye funciones avanzadas como gestión de proyectos, tareas y recursos</li>
+                    <li>Planificación visual de tareas</li>
+                    <li>Plataforma todo-en-uno</li>
+                    <li>Altamente personalizable</li>
+                    <li>Integraciones con otras herramientas</li>
+                    <li><strong>Inconvenientes:</strong></li>
+                    <li>Curva de aprendizaje más pronunciada</li>
+                    <li>Puede ser más costoso para equipos pequeños</li>
+                    <li>Curva de aprendizaje alta</li>
+                    <li>Interfaz sobrecargada</li>
+                    <li>Rendimiento lento</li>
+                    <li>Automatizaciones limitadas en la versión gratuita</li>
+                    <li>Configuración compleja de dependencias</li>
+                </ul>
+                <button class="card-btn"
+                    onclick="window.open('https://help.clickup.com/hc/en-us/sections/5414415869463-Docs', '_blank')">Ver
+                    doc</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-header">
+                    <img src="../img/ejemplos/mondayIcon.png" alt="Imagen pequeña" class="card-img">
+                    <div class="card-title">
+                        <h2>Monday</h2>
+                        <h4>El que aparece en todos los anuncios de YT</h4>
+                    </div>
+                </div>
+                <hr>
+                <ul class="card-list">
+                    <li><strong>Ventajas:</strong></li>
+                    <li>Diseño intuitivo y atractivo</li>
+                    <li>Amplias funciones de colaboración en tiempo real</li>
+                    <li>Integraciones con otras aplicaciones populares</li>
+                    <li>Personalización de flujos de trabajo</li>
+                    <li>Vistas múltiples</li>
+                    <li>Colaboración en equipo</li>
+                    <li>Automatizaciones</li>
+                    <li><strong>Inconvenientes:</strong></li>
+                    <li>Puede ser más costoso para equipos grandes</li>
+                    <li>Limitaciones en la personalización avanzada</li>
+                    <li>Funciones avanzadas en planes premium</li>
+                    <li>Curva de aprendizaje con automatizaciones</li>
+                    <li>Rendimiento lento con proyectos grandes</li>
+                    <li>Falta de funcionalidad o ine</li>
+                </ul>
+                <button class="card-btn"
+                    onclick="window.open('https://developer.monday.com/api-reference/reference/docs', '_blank')">Ver
+                    doc</button>
+            </div>
+        </div>
+    </section>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/pruebasTemas.js"></script>
 </body>
 
 </html>
